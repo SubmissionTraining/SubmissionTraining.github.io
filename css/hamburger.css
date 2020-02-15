@@ -1,0 +1,54 @@
+  /* HAMBURGER */
+  /* the container for hamburger menu slices */
+.hamburger-menu {
+}
+
+.hamburger-slice-1, .hamburger-slice-2 {
+  width: 25px;
+  height: 1.5px;
+  border-radius: 5px;
+  background: white;
+  margin: 4px 0;
+  transition: .25s;
+}
+
+.hamburger-slice-3 {
+  width: 25px;
+  height: 1.5px;
+  border-radius: 5px;
+  background: white;
+  margin: 4px 0;
+  transition: .25s;
+}
+
+.hamburger-menu:hover .hamburger-slice-1, .hamburger-menu:hover .hamburger-slice-2, .hamburger-menu:hover .hamburger-slice-3 {
+  background: rgb(61, 58, 58);
+}
+
+/* container for cancel/close "X" icon - it needs more top/bot padding than the hamburger*/
+.cancel-menu {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.cancel-slice-1 {
+  width: 25px;
+  height: 2px;
+  border-radius: 5px;
+  background: rgb(61, 58, 58);
+  transform: rotate(45deg);
+  transition: .25s;
+}
+
+.cancel-slice-2 {
+  width: 25px;
+  height: 2px;
+  border-radius: 5px;
+  background: rgb(61, 58, 58);
+  transform: translateY(-2px) rotate(-45deg);
+  transition: .25s;
+}
+
+.cancel-menu:hover .cancel-slice-1, .cancel-menu:hover .cancel-slice-2 {
+  background: rgb(160, 141, 78);
+}

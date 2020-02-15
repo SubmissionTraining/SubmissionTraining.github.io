@@ -1,0 +1,71 @@
+/* CARD SHEET */
+
+
+
+.card-container {
+    box-sizing: border-box; /* So margins applied to cards are factored into sizing */
+    display: flex; 
+    flex-direction: row;
+    padding-left: 115px;
+    padding-right: 115px;
+    flex-wrap: wrap; 
+}
+
+.card {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box; /* So margins applied to cards are factored into sizing */
+    align-items: left; /* x-axis */
+    justify-content: center; /* y-axis */
+    max-width: 100%;
+    padding: 30px 15px 30px 15px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box; /* So margins applied to cards are factored into sizing */
+    align-items: left; /* x-axis */
+    justify-content: center; /* y-axis */
+    background-color:rgba(33, 33, 33, 1);
+    padding: 60px 30px 60px 30px;
+    max-width: 100%;
+    height: 100%;
+    -moz-box-shadow:    1px 1px 5px 5px rgba(0, 0, 0,.25);
+    -webkit-box-shadow: 1px 1px 5px 5px rgba(0, 0, 0,.25);
+    box-shadow:         1px 1px 5px 5px rgba(0, 0, 0,.25);
+}
+
+
+
+
+
+
+/* MOBILE QUERIES*/
+@media only screen and (max-width: 800px) {
+  
+    .card-container {
+        box-sizing: border-box;
+        min-height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        padding-top: 100px; 
+        padding-bottom: 100px;
+        padding: 0px 0px 0px 0px;
+    }
+    
+    .card {
+        padding: 0px 10px 10px 10px;
+        
+    }
+    
+    .card-content {
+        padding: 60px 20px 60px 20px;
+
+        background: rgba(33, 33, 33, 1);
+        -moz-box-shadow:    1px 1px 5px 5px rgba(0, 0, 0, 0);
+        -webkit-box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0);
+        box-shadow:         1px 1px 5px 5px rgba(0, 0, 0, 0);
+    } 
+}

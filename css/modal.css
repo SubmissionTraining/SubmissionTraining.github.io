@@ -1,0 +1,43 @@
+
+
+/* contains all modal content */
+.modal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  /* padding/borders are factored in to total size */
+  box-sizing: border-box;
+  position: fixed;
+  min-height: calc(100vh);
+  width: 100%;
+  overflow: hidden;
+  background:rgba(17, 17, 17, 1);
+  /* so it shows over top of the reset of the page*/
+  z-index: 20;
+}
+
+/* container for modal page links*/
+.modal-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  padding: 50px 50px 50px 50px;
+}
+
+/* modal page links */
+.modal-menu-item {
+  color: white;
+  text-decoration: none;
+  font-size: 40px;
+  font-family: 'Bebas Neue', cursive;
+  padding-right: 30px;
+  transition: .25s;
+}
+
+.modal-menu-item:hover, .modal-menu-item:active {
+  color: rgba(160, 141, 78, 1);
+}

@@ -1,0 +1,100 @@
+
+
+
+/* final container section of the page */
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  /* padding/borders are factored in to total size */
+  box-sizing: border-box;
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* image located in the footer */
+.footer-logo {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.footer-nav-menu {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.footer-nav-menu-item {
+  font-size: 30px;
+  color: white;
+  font-family: 'Bebas Neue', cursive;
+  padding-right: 30px;
+  transition: .25s;
+}
+
+.footer-nav-menu-item:hover, .footer-nav-menu-item:active  {
+  color: rgb(61, 58, 58); 
+}
+
+/* container of social icons */
+.social-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  /* padding/borders are factored in to total size */
+  box-sizing: border-box;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+
+
+
+/* font awesome */
+.fa {
+  color: white;
+  font-size: 25px;
+  transition: .25s;
+}
+
+.fa:hover {  
+  color: rgb(61, 58, 58);  /* in case browser does not support gradient text */
+}
+
+
+/* mobile view */
+@media only screen and (max-width: 800px) {
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 100vh;
+  }
+
+  .footer-nav-menu {
+   flex-direction: column;
+  }
+
+  .footer-nav-menu-item {
+    padding-bottom: 30px;
+  }
+
+  .social-menu {
+    justify-content: flex-start;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .social-icon {
+    padding: 20px 30px 20px 0px;
+  }
+}

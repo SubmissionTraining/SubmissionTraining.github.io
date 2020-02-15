@@ -1,0 +1,72 @@
+  
+  
+  
+  /* NAVBAR */
+  /* navbar container */
+  .navbar {
+    top: 0;
+    transition: .2s ease-in-out;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    position: fixed;
+    width: 100%;
+    background: rgba(17, 17, 17, 1);
+    height: 100px;
+    z-index: 10;
+    /* border-bottom: 1px solid white; */
+  }
+
+  /* container of page access links */
+  .navbar-menu {
+    display: flex;
+    flex-direction: row;
+  }
+
+  /* centerpiece navbar area for logo */
+  .navbar-logo {
+    padding-top: 2px;
+    margin: 0;
+    font-size: 30px;
+  }
+
+  /* page access links */
+  .navbar-menu-item {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: Extra-Light;
+    color: white;
+    font-size: 15px;
+    transition: .75s;
+  }
+
+  /* link items that fall under the navbar*/
+  .navbar a {
+    text-decoration: none;
+    transition: .75s;
+  }
+
+  .navbar-menu-item:hover, .navbar-menu-item:active{
+    color: rgba(215, 190, 105, 1);
+  }
+
+
+
+  /* MOBILE QUERIES*/
+  @media only screen and (max-width: 800px) {
+  
+    .navbar-logo {
+      /* We want to avoid wrap as long as we can. so scale down if possible */
+      font-size: 6vw !important;
+      flex-grow: stretch;
+    }
+  }
+
+
+
+   /* DESKTOP QUERIES*/
+   @media only screen and (min-width: 800px) {
+  }

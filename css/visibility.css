@@ -1,0 +1,36 @@
+/* VISIBILTY SHEET */
+
+
+
+/* content visibility */
+.is-hidden {display: none !important;} /* remove from view and do not take up space on DOM*/
+.visibility-hidden {visibility: hidden;} /* hide content but still consume space */
+
+
+
+/* opacity */
+.opacity-25 {opacity: .25;}
+.opacity-50 {opacity: .50;}
+.opacity-75 {opacity: .75;}
+.opacity-100 {opacity: 1.00;}
+
+
+
+
+
+ /* mobile queries */
+ @media only screen and (max-width: 800px) {
+
+    .display-none-on-mobile {display: none !important;}
+    .visibility-hidden-on-mobile {visibility: hidden;}
+}
+
+
+
+/* desktop queries */
+@media only screen and (min-width: 800px) {
+
+    .display-none-on-desktop {display: none !important;}
+    .visibility-hidden-on-desktop {visibility: hidden;}
+}
+

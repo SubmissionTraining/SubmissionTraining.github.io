@@ -1,0 +1,215 @@
+
+
+
+* {
+  /* prevent tap highlight color on chrome */
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+
+/* standard tags */
+html, body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+hr {
+  height: 3px;
+  background: rgb(195, 168, 79);
+  border-width: 0px;
+  width: 33%;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  outline: 0; 
+  text-decoration: none;
+}
+
+hr,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* custom */
+/* Fullsize screen if you include the navbar. So the 100px navbar + this div will equal the fullscreens height. */
+.hero-nav-fullscreen {
+  box-sizing: border-box;
+  min-height: calc(100vh - 100px);
+  width: 100%;
+  overflow: hidden;
+  padding-top: 100px; 
+  padding-bottom: 100px;
+}
+
+.hero-footer-fullscreen {
+  box-sizing: border-box;
+  min-height: calc(100vh - 100px);
+  width: 100%;
+  overflow: hidden;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+/* Fullsize screen without the navbar. So, this div by itself will cover the screen. */
+.hero-true-fullscreen {
+  box-sizing: border-box;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 100px; 
+  padding-bottom: 100px;
+}
+
+/* wrapper container in which all content resides */
+.page-contents-no-padding {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  flex-wrap: wrap;
+  background: rgba(17, 17, 17, 1);
+  box-sizing: border-box;  /* padding/borders are factored in to total size */
+  padding-top: 100px; /* heigh of navbar */
+  min-height: calc(100vh); /* set min height for fullscreen, content can expand if needed */
+  width: 100%; 
+  padding : 0 0 0 0;
+  overflow: hidden;
+}
+
+/* wrapper container in which all content resides */
+.page-contents-padding {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  flex-wrap: wrap;
+  background: rgba(17, 17, 17, 1);
+  box-sizing: border-box; /* padding/borders are factored in to total size */
+  padding-top: 100px; /* heigh of navbar */
+  min-height: calc(100vh); /* set min height for fullscreen, content can expand if needed */
+  width: 100%;
+  padding-left: 115px;
+  padding-right: 115px;
+  overflow: hidden;
+}
+
+/* fullsize width screen span */
+.hero-fullwidth {
+  box-sizing: border-box; /* padding/borders are factored in to total size */
+  width: 100%;
+  overflow: hidden;
+}
+
+
+
+.shadow {
+  /* syntax: h-offset v-offset blur-rad spread-rad color */
+  -moz-box-shadow:    1px 1px 5px 5px rgba(0, 0, 0,.15);
+  -webkit-box-shadow: 1px 1px 5px 5px rgba(0, 0, 0,.15);
+  box-shadow:         1px 1px 5px 5px rgba(0, 0, 0,.15);
+}
+
+.outline {
+  outline: 1px solid white;
+  outline-offset: -10px;
+}
+
+.outline-gold {
+  outline: 1px solid rgba(215, 190, 105, 1);
+  outline-offset: -10px;
+}
+
+.image-body {
+  background: url(https://i.pinimg.com/originals/86/66/85/866685bdd4bbc516ec1a13c956d4d7bf.jpg) center no-repeat; 
+  z-index: -1;
+}
+
+
+
+/* width */
+/* intended for desktop design. on mobile, override width to auto */
+.width-auto {width: auto;}
+.width-100 {width: 100%;}
+.width-75 {width: 75%;}
+.width-50 {width: 50%;}
+.width-50-dm {width: 50%;}
+.width-33 {width: 33.33%;}
+.width-25 {width: 25%;}
+.width-10 {width: 10%;}
+.max-width-500px {max-width: 500px;}
+.min-width-400px {min-width: 400px;}
+.min-height-100 {min-height: 100%;}
+.position-fixed {position: fixed;}
+
+
+
+.button {
+  transition: .5s;
+  background: white;
+  color: rgb(61, 58, 58);
+  padding: 10px 30px 10px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.button:hover, .button:active {
+  background: rgb(61, 58, 58);
+  border-radius: 50px;
+  color: white;
+}
+
+.button-inverse {
+  transition: .5s;
+  color: white;
+  background: rgba(17, 17, 17, 1);
+  padding: 10px 30px 10px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.button-inverse:hover, .button-inverse:active {
+  color: rgba(17, 17, 17, 1);
+  border-radius: 50px;
+  background: rgb(226, 226, 226);
+}
+
+.card {
+  border-radius: 0px;
+  box-sizing: border-box;
+  padding: 5px 5px 5px 5px;
+}
+
+
+
+
+  
+/* mobile queries */
+@media only screen and (max-width: 800px) {
+  
+    .page-contents-padding {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    .width-50 {width: auto;}
+    .width-33 {width: auto;}
+    .width-25 {width: auto;}
+
+    hr {height: calc(3px * (2/3));}
+}
+
+/* desktop queries */
+@media only screen and (min-width: 800px) {
+}
+

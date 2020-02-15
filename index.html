@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html class="background-black">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Submission Training</title>
+    <link rel="icon" href="src\favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Oranienbaum|Montserrat:200,300,400,600,700,800|Overpass:200,400|Playfair+Display:400,800&display=swap" rel="stylesheet">     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">        
+    <link rel="stylesheet" type="text/css" href="css\style.css">
+    <link rel="stylesheet" type="text/css" href="css\navbar.css">
+    <link rel="stylesheet" type="text/css" href="css\modal.css">
+    <link rel="stylesheet" type="text/css" href="css\hamburger.css">
+    <link rel="stylesheet" type="text/css" href="css\footer.css">
+    <link rel="stylesheet" type="text/css" href="css\visibility.css">
+    <link rel="stylesheet" type="text/css" href="css\spacing.css">
+    <link rel="stylesheet" type="text/css" href="css\flex.css">
+    <link rel="stylesheet" type="text/css" href="css\fonts.css">
+    <link rel="stylesheet" type="text/css" href="css\card.css">
+    <link rel="stylesheet" type="text/css" href="css\colors.css">
+</head>
+
+<body>
+    <!-- MODAL -->
+    <div id="modal" class="modal is-hidden">
+        <!-- modal navbar -->
+        <div class="navbar background-transparent justify-content-flex-end">
+            <div class="padding-all-30px visibility-hidden-on-desktop">  
+                <div class="cancel-menu" onclick="modalToggle();">
+                    <div class="cancel-slice-1"> </div>
+                    <div class="cancel-slice-2"> </div>
+                </div> 
+            </div>
+        </div>
+        <!-- end of modal navbar -->
+        <!-- modal body -->
+        <div class="modal-body width-100 row justify-content-center align-items-stretch">
+            <div class="modal-menu">
+                <a class="modal-menu-item" href="" onclick="modalClose();"><div>LOCAL</div></a>
+                <a class="modal-menu-item" href="" onclick="modalClose();"><div>ONLINE</div></a>
+                <a class="modal-menu-item" href="" onclick="modalClose();"><div>FAQ</div></a>
+                <a class="modal-menu-item" href="" onclick="modalClose();"><div>APPLY</div></a>
+            </div>
+        </div>
+        <!-- end of modal body -->
+    </div> 
+    <!-- END OF MODAL -->    
+
+
+
+
+
+    <!-- NAVBAR -->
+    <div id="navbar" class="navbar">
+        <!-- navbar item 1 (this is here just to ensure the same amount of space is used on each side of the navbar) -->
+        <div class="padding-all-30px display-none-on-mobile"> 
+            <div class="hamburger-menu visibility-hidden" onclick="modalToggle();">
+                <div class="hamburger-slice-1"></div>
+                <div class="hamburger-slice-2"></div>
+                <div class="hamburger-slice-3"></div> 
+            </div> 
+        </div>
+
+        <!-- navbar item 2 -->
+        <div class="padding-all-30px flex-container flex-direction-column justify-content-center align-items-center flex-grow-1">
+            <div class="width-100 flex-container flex-direction-row justify-content-space-between align-items-center flex-wrap-wrap justify-content-left-on-mobile">
+                
+                <a href="index.html"> 
+                    <p class="color-white font-serif1 text-shadow navbar-logo">SUBMISSION TRAINING</p> 
+                </a>
+          
+                <div class="navbar-menu display-none-on-mobile">
+                    <a class="" href=""><div class="navbar-menu-item">LOCAL</div></a>
+                    <a class="" href=""><div class="navbar-menu-item">ONLINE</div></a>
+                    <a class="" href=""><div class="navbar-menu-item">FAQ</div></a>
+                    <a class="" href="pages\apply.html"><div class="navbar-menu-item">APPLY</div></a>
+                </div> 
+            </div>            
+        </div>
+
+        <!-- navbar item 3 -->
+        <div class="padding-all-30px visibility-hidden-on-desktop">  
+            <div class="hamburger-menu justify-content-right" onclick="modalToggle();">
+                <div class="hamburger-slice-1"></div>
+                <div class="hamburger-slice-2"></div>
+                <div class="hamburger-slice-3"></div> 
+            </div> 
+        </div>
+    </div>
+    <!-- END OF NAVBAR -->
+
+
+
+
+
+    <!-- BODY -->
+    <div class="page-contents-no-padding">
+        <!-- hero 1 -->
+        <div class="hero-true-fullscreen padding-left-right-115px row align-items-center justify-content-center">
+            <div class="column justify-content-space-between align-items-center flex-wrap-wrap align-items-center width-100">
+                <div class="column align-items-center">
+                    <p class="font-sans-serif1 color-white font-size-150 text-shadow-heavy margin-0">APPLY TODAY</p>
+                    <a class="button font-sans-serif2 font-size-20" href="pages\apply.html">Apply &nbsp; &#xbb;</a>
+                </div>
+            </div>
+        </div>
+        <!-- end of hero 1 -->
+
+
+        <!-- hero 2 -->
+        <div class="hero-fullwidth row align-items-center justify-content-center">
+            <div class="card-container width-100">
+                <div class="card width-33 flex">
+                    <div class="card-content">
+                        <p class="margin-0 color-white font-sans-serif2 font-size-30 font-weight-600">LOCAL & ONLINE</p>
+                        <p class="padding-all-5px margin-0"> </p>
+                        <hr>
+                        <p class="padding-all-5px margin-0"> </p>
+                        <p class="margin-0 color-white font-sans-serif2 font-size-20"> 
+                            Training is available locally and online. The local option in for those in the Philadelphia area.
+                            While the online option is open to anyone in the United States. Note, there are separate applications for local and online training.
+                        </p>
+                        <p class="padding-all-5px margin-0"> </p>
+                    </div> 
+                </div> 
+                <div class="card width-33">
+                    <div class="card-content">
+                        <p class="margin-0 color-white font-sans-serif2 font-size-30 font-weight-600">LIMITS & DESIRES</p>
+                        <p class="padding-all-5px margin-0"> </p>
+                        <hr>
+                        <p class="padding-all-5px margin-0"> </p>
+                        <p class="margin-0 color-white font-sans-serif2 font-size-20"> 
+                            Submission Training is tailored to your limits and desires. Meaning, your boundaries will always be respected.
+                            Respecting your limits is something the Trainer takes very seriously. Be sure to speak up.
+                            And, your dark, submissive desires will be explored.
+                        </p>
+                        <p class="padding-all-5px margin-0"> </p>
+                    </div> 
+                </div> 
+                <div class="card width-33">
+                    <div class="card-content">
+                        <p class="margin-0 color-white font-sans-serif2 font-size-30 font-weight-600">METHODOLOGY</p>
+                        <p class="padding-all-5px margin-0"> </p>
+                        <hr>
+                        <p class="padding-all-5px margin-0"> </p>
+                        <p class="margin-0 color-white font-sans-serif2 font-size-20"> 
+                            The way training is conducted differs based on your experience. If you are a new submissive, safety and exploration are the focus.
+                            And, training is carried out with an instructional tone. 
+                            If you are a seasoned submissive, training serves to reinforce safe, gratifying bdsm practices.
+                        </p>
+                        <p class="padding-all-5px margin-0"> </p>
+                    </div> 
+                </div> 
+            </div>
+        </div>
+        <!-- end of hero 2 -->
+
+
+          <!-- hero 3 -->
+          <div class="hero-true-fullscreen padding-left-right-115px row align-items-center justify-content-center">
+            <div class="column justify-content-space-between align-items-center flex-wrap-wrap align-items-center width-100">
+                <div class="column align-items-flex-start padding-all-30px"></div>
+                    <div class="column align-items-center">
+                        <p class="font-sans-serif1 color-white font-size-150 text-shadow-heavy margin-0">QUESTIONS?</p>
+                        <a class="button font-sans-serif2 font-size-20" href="pages\apply.html">FAQ &nbsp; &#xbb;</a>
+                    </div>
+                <div class="column align-items-flex-start padding-all-30px"></div>
+            </div>
+        </div>
+        <!-- end of hero 3 -->
+
+
+        <!-- footer start -->
+        <div id="footer" class="footer padding-left-right-115px">
+            <div class="row width-75 display-none-on-desktop">
+                <div class="footer-nav-menu">
+                    <a class="footer-nav-menu-item" href="">                LOCAL</a>
+                    <a class="footer-nav-menu-item" href="">                ONLINE</a>
+                    <a class="footer-nav-menu-item" href="">                FAQ</a>
+                    <a class="footer-nav-menu-item" href="pages\apply.html">APPLY</a>
+                </div>
+            </div>
+
+            <div class="row width-25 justify-content-flex-end">
+                <div class="social-menu">
+                    <i class="fa fa-snapchat-ghost social-icon"></i>
+                    <i class="fa fa-instagram social-icon"></i>
+                    <i class="fa fa-twitter social-icon"></i>
+                    <p class="width-100 color-white font-size-10 text-align-center display-none-on-mobile padding-all-30px">Submission Training 2020</p>
+                </div>
+            </div>
+        </div>
+        <!-- end of footer -->
+    </div>  
+    <!-- END OF BODY -->
+
+
+  
+
+
+    <script src="js\modal.js"></script> 
+    <script src="js\navHide.js"></script> 
+</body>
+</html>
