@@ -17,7 +17,7 @@
 .color-full-black {color: rgba(1, 1, 1, 1);}
 
 .color-light-gold {color: rgba(238, 220, 162, 1);}
-.color-gold {color: rgba(215, 190, 105, 1);}
+.color-gold {color: rgba(195, 168, 79, 1);}
 .color-dark-gold {color: rgba(160, 141, 78, 1);}
 
 .color-transparent{color: transparent;}
@@ -34,12 +34,12 @@
 .background-dark-gray {background: rgb(124, 113, 113);}
 
 .background-light-black {background: rgb(61, 58, 58);}
-.background-medium-black {background: rgb(35, 35, 35);}
+.background-medium-black {background: rgb(20, 20, 20);}
 .background-black {background: rgba(17, 17, 17, 1);}
 .background-full-black {background: rgba(1, 1, 1, 1);}
 
 .background-light-gold {background: rgba(238, 220, 162, 1);}
-.background-gold {background: rgb(248, 209, 82);}
+.background-gold {background: rgba(195, 168, 79, 1);}
 .background-dark-gold {background: rgba(160, 141, 78, 1);}
 
 .background-transparent {background: transparent;}
@@ -49,7 +49,7 @@
 /* gradient text */
 .gradient-text-gold {
     color: rgba(215, 190, 105, 1); /* in case browser does not support gradient text */
-    background: -webkit-linear-gradient(270deg, rgb(246, 213, 102) 0%, rgba(160, 141, 78, 1) 100%);
+    background: -webkit-linear-gradient(225deg, rgba(238, 220, 162, 1) 0%, rgba(215, 190, 105, 1) 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

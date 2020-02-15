@@ -172,7 +172,7 @@ h6 {
 .button-inverse {
   transition: .5s;
   color: white;
-  background: rgba(17, 17, 17, 1);
+  background-image: linear-gradient(225deg, rgba(238, 220, 162, 1) 0%, rgba(215, 190, 105, 1) 100%);
   padding: 10px 30px 10px 30px;
   border-radius: 50px;
   text-decoration: none;
@@ -181,7 +181,7 @@ h6 {
 .button-inverse:hover, .button-inverse:active {
   color: rgba(17, 17, 17, 1);
   border-radius: 50px;
-  background: rgb(226, 226, 226);
+  background-image: linear-gradient(225deg, rgb(100, 95, 74) 0%, rgb(68, 60, 36) 100%);
 }
 
 .card {

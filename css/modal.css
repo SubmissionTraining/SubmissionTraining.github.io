@@ -39,5 +39,6 @@
 }
 
 .modal-menu-item:hover, .modal-menu-item:active {
-  color: rgba(160, 141, 78, 1);
+  transition: .25s;
+  color: rgb(195, 168, 79);
 }

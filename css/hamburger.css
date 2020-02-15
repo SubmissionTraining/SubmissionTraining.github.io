@@ -22,7 +22,7 @@
 }
 
 .hamburger-menu:hover .hamburger-slice-1, .hamburger-menu:hover .hamburger-slice-2, .hamburger-menu:hover .hamburger-slice-3 {
-  background: rgb(61, 58, 58);
+  background: rgb(195, 168, 79);
 }
 
 /* container for cancel/close "X" icon - it needs more top/bot padding than the hamburger*/
