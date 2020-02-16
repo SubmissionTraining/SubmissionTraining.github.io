@@ -53,6 +53,10 @@
     color: rgb(195, 168, 79);
   }
 
+  .navbar-menu-item.is-active {
+    color: rgba(161, 155, 155, 1);
+  }
+
 
 
   /* MOBILE QUERIES*/

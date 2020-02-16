@@ -42,3 +42,8 @@
   transition: .25s;
   color: rgb(195, 168, 79);
 }
+
+.modal-menu-item.is-active {
+  transition: .25s;
+  color: rgba(161, 155, 155, 1);
+}

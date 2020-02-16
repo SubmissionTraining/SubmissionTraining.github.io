@@ -39,6 +39,10 @@
   color: rgb(61, 58, 58); 
 }
 
+.footer-nav-menu-item.is-active {
+  color: rgb(61, 58, 58); 
+}
+
 /* container of social icons */
 .social-menu {
   display: flex;

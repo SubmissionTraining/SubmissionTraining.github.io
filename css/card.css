@@ -25,6 +25,7 @@
 .card-content {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     box-sizing: border-box; /* So margins applied to cards are factored into sizing */
     align-items: left; /* x-axis */
     justify-content: center; /* y-axis */
